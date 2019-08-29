@@ -1,7 +1,7 @@
 {
   "name": "typescript-starter",
   "version": "1.0.0",
-  "description": "--- title: TypeScript Starter | Node, Sequelize v4, Jest, Express.js ---",
+  "description": "A basic typescript app starter for newbies in 2019.",
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./dist && tsc",
