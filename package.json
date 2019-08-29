@@ -1,0 +1,21 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "--- title: TypeScript Starter | Node, Sequelize v4, Jest, Express.js ---",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "start:dev": "nodemon",
+    "start": "npm run build && node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "nodemon": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
+}
