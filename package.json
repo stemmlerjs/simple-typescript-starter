@@ -4,7 +4,7 @@
   "description": "A basic typescript app starter for newbies in 2019.",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf ./dist && tsc",
+    "build": "rimraf ./build && tsc",
     "start:dev": "nodemon",
     "start": "npm run build && node build/index.js"
   },
