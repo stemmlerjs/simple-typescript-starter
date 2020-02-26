@@ -6,13 +6,17 @@
   "scripts": {
     "build": "rimraf ./build && tsc",
     "start:dev": "nodemon",
-    "start": "npm run build && node build/index.js"
+    "start": "npm run build && node build/index.js",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^12.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "eslint": "^6.8.0",
     "nodemon": "^1.19.1",
     "rimraf": "^3.0.0",
     "ts-node": "^8.3.0",
