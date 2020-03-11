@@ -3,7 +3,6 @@
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint",
-    "no-loops",
     "prettier"
   ],
   "extends": [
@@ -13,7 +12,6 @@
     "prettier"
   ],
   "rules": {
-    "no-loops/no-loops": 2,
     "no-console": 1,
     "prettier/prettier": 2
   }
