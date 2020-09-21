@@ -8,8 +8,8 @@
     "start:dev": "nodemon",
     "start": "npm run build && node build/index.js",
     "lint": "eslint . --ext .ts",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
+    "prettier-format": "prettier --config .prettierrc \"./src/**/*.ts\" --write",
+    "prettier-watch": "onchange \"src/**/*.ts\" -- prettier --write {{changed}}"
   },
   "husky": {
     "hooks": {
