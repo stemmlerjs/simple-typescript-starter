@@ -8,8 +8,14 @@
     "start:dev": "nodemon",
     "start": "npm run build && node build/index.js",
     "lint": "eslint . --ext .ts",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
+    "prettier-format": "run-script-os",
+    "prettier-format:win32": "prettier --config .prettierrc \"./src/**/*.ts\" --write",
+    "prettier-format:darwin:linux": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prettier-format:default": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prettier-watch": "run-script-os",
+    "prettier-watch:win32": "onchange \"src/**/*.ts\" -- prettier --write {{changed}}", 
+    "prettier-watch:darwin:linux": "onchange 'src/**/*.ts' -- prettier --write {{changed}}", 
+    "prettier-watch:default": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
   },
   "husky": {
     "hooks": {
@@ -31,6 +37,7 @@
     "onchange": "^6.1.0",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
+    "run-script-os": "^1.1.1",
     "ts-node": "^8.3.0",
     "typescript": "^4.0.3"
   }
