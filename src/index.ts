@@ -1,14 +1,14 @@
 import express, { Application } from 'express';
-import dotenv, { DotenvConfigOutput } from 'dotenv';
+import env from './config/dotenv';
+import routes from './routes';
+import database from './db/index';
 
 const app: Application = express();
 
-const config: DotenvConfigOutput = dotenv.config({
-  path: __dirname + '/../.env',
-});
-
-const PORT = process.env.PORT;
+const PORT = env.PORT;
 
 app.listen(PORT, () => {
   console.log(`Server is listening at port ${PORT}`);
+  routes(app);
+  database();
 });
