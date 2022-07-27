@@ -1,7 +1,7 @@
 {
   "name": "typescript-starter",
   "version": "1.0.0",
-  "description": "A basic typescript app starter for newbies in 2019.",
+  "description": "A basic typescript app starter for newbies in 2022.",
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./build && tsc",
@@ -28,25 +28,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^26.0.14",
-    "@types/node": "^12.7.2",
-    "@typescript-eslint/eslint-plugin": "^2.21.0",
-    "@typescript-eslint/parser": "^2.21.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.2.3",
-    "nodemon": "^1.19.1",
-    "onchange": "^6.1.0",
-    "prettier": "^1.19.1",
-    "rimraf": "^3.0.0",
-    "run-script-os": "^1.1.1",
-    "ts-node": "^8.3.0",
-    "typescript": "^4.0.3"
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "onchange": "^7.1.0",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "run-script-os": "^1.1.6",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   },
-  "dependencies": {
-    "eslint-plugin-jest": "^24.1.0",
-    "jest": "^26.5.3",
-    "ts-jest": "^26.4.1"
-  }
+  "dependencies": {}
 }
