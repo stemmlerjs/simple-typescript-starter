@@ -1,6 +1,11 @@
-# 🧰 Simple TypeScript Starter | 2022
+# Simple TypeScript Starter | 2022
 
-> We talk about a lot of **advanced Node.js and TypeScript** concepts on [the blog](https://khalilstemmler.com), particularly focused around Domain-Driven Design and large-scale enterprise application patterns. However, I received a few emails from readers that were interested in seeing what a basic TypeScript starter project looks like. So I've put together just that.
+A further simplified version of stemmlerjs/simple-typescript-starter with a few changes.
+
+- Use github actions to replace husky
+- Remove eslint
+- Remove project-specific VS Code configuration
+- Remove prettier (I have VS Code run prettier automatically)
 
 ### Features
 
@@ -33,12 +38,3 @@ Runs the `jest` tests once.
 #### `npm run test:dev`
 
 Run the `jest` tests in watch mode, waiting for file changes.
-
-#### `npm run prettier-format`
-
-Format your code.
-
-#### `npm run prettier-watch`
-
-Format your code in watch mode, waiting for file changes.
-
