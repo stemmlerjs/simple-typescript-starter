@@ -6,9 +6,7 @@
     {
       "type": "typescript",
       "tsconfig": "simple-typescript-starter/tsconfig.json",
-      "problemMatcher": [
-        "$tsc"
-      ]
+      "problemMatcher": ["$tsc"]
     }
   ]
 }
