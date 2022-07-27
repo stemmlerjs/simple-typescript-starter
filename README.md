@@ -41,4 +41,3 @@ Format your code.
 #### `npm run prettier-watch`
 
 Format your code in watch mode, waiting for file changes.
-
