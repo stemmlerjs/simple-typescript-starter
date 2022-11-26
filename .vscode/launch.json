@@ -8,7 +8,7 @@
       "preLaunchTask": "npm: build",
       "program": "${workspaceFolder}/src/index.ts",
       "protocol": "inspector",
-      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "outFiles": ["${workspaceFolder}/build/**/*.js"],
       "sourceMaps": true,
       "smartStep": true,
       "internalConsoleOptions": "openOnSessionStart"

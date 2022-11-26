@@ -1,11 +1,11 @@
 {
   "name": "typescript-starter",
   "version": "1.0.0",
-  "description": "A basic typescript app starter for newbies in 2022.",
+  "description": "A basic typescript app starter for 2023.",
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./build && tsc",
-    "start:dev": "nodemon",
+    "start:dev": "npx nodemon",
     "start": "npm run build && node build/index.js",
     "lint": "eslint . --ext .ts",
     "prettier-format": "run-script-os",
@@ -28,7 +28,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^28.1.6",
+    "@types/jest": "^28.1.8",
     "@types/node": "^18.6.1",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
@@ -47,5 +47,7 @@
     "ts-node": "^10.9.1",
     "typescript": "^4.7.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jest-cucumber": "^3.0.1"
+  }
 }
