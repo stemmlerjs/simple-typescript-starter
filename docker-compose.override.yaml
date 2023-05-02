@@ -1,0 +1,24 @@
+networks:
+  example-backend-dev:
+    name: example-backend-dev
+#this config is automatically applied when using docker compose up
+#override service template for local development
+#automatically restarts the application after changing source files
+#mounts local src folder to service src folder
+services: # docker compose up --build
+  simple-type-script-starter: # docker compose up --build simple-type-script-starter
+    restart: unless-stopped
+    build:
+      context: ${DIR}
+      dockerfile: Dockerfile
+      target: development
+    container_name: simple-type-script-starter
+    image: simple-type-script-starter:dev-1.0.0-node18-alpine
+    command: npm run start:dev
+    volumes:
+      - ${DIR}:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${PORT}:${PORT}
+    networks:
+      - example-backend-dev

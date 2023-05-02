@@ -14,6 +14,19 @@
 
 ### Scripts
 
+
+#### `docker compose build`
+
+Builds the docker image for development environment
+
+#### `docker compose up`
+
+Starts the application in development using docker compose with hot reloading
+
+#### `docker build -t simple-type-script-starter:1.0.0-node18-alpine --target production .`
+
+Builds the docker image for production environment
+
 #### `npm run start:dev`
 
 Starts the application in development using `nodemon` and `ts-node` to do hot reloading.

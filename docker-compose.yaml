@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  simple-type-script-starter:
+    image: simple-type-script-starter:1.0.0-node18-alpine
+    deploy:
+      mode: replicated
+      replicas: 1
+    env_file:
+      - .env

@@ -1,0 +1,34 @@
+version: '3.8'
+
+networks:
+  backend:
+    external: true
+    name: backend
+
+services:
+  simple-type-script-starter:
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        max_replicas_per_node: 2
+        #        preferences:
+        #          - spread: node.id
+        constraints: # only on manager/worker node (pick one)
+          - node.role == manager
+      restart_policy:
+        condition: on-failure
+        delay: 15s
+        max_attempts: 5
+        window: 10s
+      update_config:
+        parallelism: 1
+        delay: 5s
+      resources:
+        limits:
+          memory: 512M
+          cpus: '0.4'
+        reservations:
+          memory: 64M
+    networks:
+      - backend
