@@ -3,3 +3,6 @@
 # JSON extension used by TypeScript.
 tsconfig.*.json linguist-language=JSON-with-Comments
 tsconfig.json linguist-language=JSON-with-Comments
+
+# Also fix how Visual Studio Code configuration files are read.
+vscode/*.json linguist-language=JSON-with-Comments
