@@ -1,7 +1,7 @@
 {
   "name": "typescript-starter",
   "version": "1.0.0",
-  "description": "A basic typescript app starter for 2023.",
+  "description": "A basic typescript app starter for 2024.",
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./build && tsc",
