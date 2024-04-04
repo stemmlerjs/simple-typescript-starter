@@ -1,0 +1,8 @@
+# Fix how tsconfig.json files are displayed in GitHub's web view,
+# by telling it to read said files as JSON With Comments, the
+# JSON extension used by TypeScript.
+tsconfig.*.json linguist-language=JSON-with-Comments
+tsconfig.json linguist-language=JSON-with-Comments
+
+# Also fix how Visual Studio Code configuration files are read.
+.vscode/*.json linguist-language=JSON-with-Comments
